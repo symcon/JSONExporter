@@ -1,0 +1,12 @@
+{
+    "id": "{5BE75641-EBCE-8089-3083-6E07CBBC1AD6}",
+    "name": "JSONExporter",
+    "author": "Symcon GmbH",
+    "url": "https://github.com/symcon/JSONExporter/JSONExporter",
+    "compatibility": {
+        "version": "5.5"
+    },
+    "version": "1.0",
+    "build": 0,
+    "date": 0
+}

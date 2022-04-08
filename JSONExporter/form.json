@@ -1,0 +1,64 @@
+{
+    "elements": [
+        {
+            "type": "PopupButton",
+            "caption": "Configure Structure",
+            "popup": {
+                "caption": "Configure Export Structure",
+                "items": [
+                    {
+                        "type": "Label",
+                        "caption": "Please be careful when changing the structure!",
+                        "visible": false
+                    },
+                    {
+                        "type": "List",
+                        "name": "ExportStructure",
+                        "rowCount": 10,
+                        "caption": "Export Structure",
+                        "add": true,
+                        "delete": true,
+                        "columns": [
+                            {
+                                "caption": "Ident",
+                                "name": "Ident",
+                                "width": "auto",
+                                "add": "",
+                                "edit": {
+                                    "type": "ValidationTextBox",
+                                    "validate": "[a-zA-z0-9_]+"
+                                }
+                            },
+                            {
+                                "caption": "Value",
+                                "name": "Value",
+                                "width": "150px",
+                                "add": "",
+                                "edit": { 
+                                    "type": "Select",
+                                    "name": "DeviceType",
+                                    "caption": "Einheit",
+                                    "options": [
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "List",
+            "name": "ExportedVariables",
+            "caption": "Exported Variables",
+            "add": true,
+            "delete": true,
+            "columns": [
+            ],
+            "visible": false
+        }
+    ],
+    "actions": [
+		{ "type": "Button", "label": "Open in Browser", "link": true, "onClick": "echo '/hook/json/' . $id;" }
+    ]
+}
