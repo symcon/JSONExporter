@@ -26,13 +26,52 @@ trait JSONExporterFields {
             ],
             "data" => "return GetValueFormatted(\$value);",
         ],
+        "Variable.Updated" => [
+            "caption" => "Variable (Updated, dd.mm.yyyy hh:mm:ss)",
+            "add" => 0,
+            "edit" => [
+                "type" => "SelectVariable"
+            ],
+            "data" => "return date('d.m.Y H:i:s', IPS_GetVariable(\$value)['VariableUpdated']);;",
+        ],
+        "Variable.UpdatedUnixTimestamp" => [
+            "caption" => "Variable (Updated, UnixTimestamp)",
+            "add" => 0,
+            "edit" => [
+                "type" => "SelectVariable"
+            ],
+            "data" => "return IPS_GetVariable(\$value)['VariableUpdated'];",
+        ],
+        "Variable.Changed" => [
+            "caption" => "Variable (Changed, dd.mm.yyyy hh:mm:ss)",
+            "add" => 0,
+            "edit" => [
+                "type" => "SelectVariable"
+            ],
+            "data" => "return date('d.m.Y H:i:s', IPS_GetVariable(\$value)['VariableChanged']);",
+        ],
+        "Variable.ChangedUnixTimestamp" => [
+            "caption" => "Variable (Changed, UnixTimestamp)",
+            "add" => 0,
+            "edit" => [
+                "type" => "SelectVariable"
+            ],
+            "data" => "return IPS_GetVariable(\$value)['VariableChanged'];",
+        ],
         "Variable.Profile.Suffix" => [
             "caption" => "Variable (Profile Suffix)",
             "add" => 0,
             "edit" => [
                 "type" => "SelectVariable"
             ],
-            "data" => "",
+            "data" => [
+                "\$variable = IPS_GetVariable(\$value);",
+                "\$profile = \$variable['VariableCustomProfile'];",
+                "if (\$profile == '') {",
+                "\$profile = \$variable['VariableProfile'];",
+                "}",
+                "return IPS_GetVariableProfile(\$profile)['Suffix'];",
+            ],
         ],
         "Variable.Profile.Digits" => [
             "caption" => "Variable (Profile Digits)",
@@ -40,7 +79,14 @@ trait JSONExporterFields {
             "edit" => [
                 "type" => "SelectVariable"
             ],
-            "data" => "",
+            "data" => [
+                "\$variable = IPS_GetVariable(\$value);",
+                "\$profile = \$variable['VariableCustomProfile'];",
+                "if (\$profile == '') {",
+                "\$profile = \$variable['VariableProfile'];",
+                "}",
+                "return IPS_GetVariableProfile(\$profile)['Digits'];",
+            ],
         ],
     ];
 }

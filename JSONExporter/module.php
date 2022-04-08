@@ -64,11 +64,15 @@
             foreach(json_decode($this->ReadPropertyString("ExportedVariables"), true) as $structure) {
                 $data = [];
                 foreach($structure as $key => $value) {
-                    $data[$key] = eval($this->fields[$map[$key]]["data"]);
+                    $code = $this->fields[$map[$key]]["data"];
+                    if (is_array($code)) {
+                        $code = implode(PHP_EOL, $code);
+                    }
+                    $data[$key] = eval($code);
                 }
                 $json[] = $data;
             }
-            echo json_encode($json);
+            echo json_encode($json, JSON_PRETTY_PRINT);
 		}
         
         
