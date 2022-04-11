@@ -40,7 +40,11 @@ declare(strict_types=1);
                 ];
             }
 
-            $data['elements'][1]['visible'] = true;
+            if (count(json_decode($this->ReadPropertyString('ExportStructure'), true)) != 0) {
+                $data['elements'][1]['visible'] = true;
+                $data['elements'][0]['popup']['items'][0]['visible'] = true;
+            }
+
             foreach (json_decode($this->ReadPropertyString('ExportStructure'), true) as $structure) {
                 $data['elements'][1]['columns'][] = [
                     'caption' => $structure['Ident'],
