@@ -1,14 +1,14 @@
 {
-	"id": "{EED0B0ED-2498-FB4B-366B-BF6B82E497DB}",
-	"name": "JSONExporter",
-	"type": 0,
-	"vendor": "",
-	"aliases": 
-	[
-		"JSON Exporter"
-	],
-	"parentRequirements": [],
-	"childRequirements": [],
-	"implemented": [],
-	"prefix": "JEX"
+    "id": "{EED0B0ED-2498-FB4B-366B-BF6B82E497DB}",
+    "name": "JSONExporter",
+    "type": 0,
+    "vendor": "",
+    "aliases": [
+        "JSON Exporter"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "url": "https://github.com/symcon/JSONExporter",
+    "prefix": "JEX"
 }

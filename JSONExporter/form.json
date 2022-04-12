@@ -34,12 +34,9 @@
                                 "name": "Value",
                                 "width": "150px",
                                 "add": "",
-                                "edit": { 
+                                "edit": {
                                     "type": "Select",
-                                    "name": "DeviceType",
-                                    "caption": "Einheit",
-                                    "options": [
-                                    ]
+                                    "options": []
                                 }
                             }
                         ]
@@ -53,12 +50,16 @@
             "caption": "Exported Variables",
             "add": true,
             "delete": true,
-            "columns": [
-            ],
+            "columns": [],
             "visible": false
         }
     ],
     "actions": [
-		{ "type": "Button", "label": "Open in Browser", "link": true, "onClick": "echo '/hook/json/' . $id;" }
+        {
+            "type": "Button",
+            "label": "Open in Browser",
+            "link": true,
+            "onClick": "echo '/hook/json/' . $id;"
+        }
     ]
 }
