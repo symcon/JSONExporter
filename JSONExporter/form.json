@@ -36,8 +36,6 @@
                                 "add": "",
                                 "edit": {
                                     "type": "Select",
-                                    "name": "DeviceType",
-                                    "caption": "Einheit",
                                     "options": []
                                 }
                             }

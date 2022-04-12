@@ -3,11 +3,20 @@
         "de": {
             "Configure Structure": "Konfiguriere Struktur",
             "Configure Export Structure": "Konfiguriere Export Struktur",
-            "Please be careful when changing the structure!": "Vorsicht, wenn die Struktur geändert wird!",
+            "Please be careful when changing the structure!": "Seien Sie vorsichtig beim Ändern der Struktur!",
             "Export Structure": "Export Struktur",
             "Value": "Wert",
             "Exported Variables": "Zu exportierende Variablen",
-            "Open in Browser": "In Browser öffnen"
+            "Open in Browser": "In Browser öffnen",
+            "Custom": "Benutzerdefiniert",
+            "Variable (Value)": "Variable (Wert)",
+            "Variable (Value Formatted)": "Variable (Formatierter Wert)",
+            "Variable (Updated, dd.mm.yyyy hh:mm:ss)": "Variable (Aktualisiert, dd.mm.yyyy hh:mm:ss)",
+            "Variable (Updated, UnixTimestamp)": "Variable, (Aktualisiert, UnixTimestamp)",
+            "Variable (Changed, dd.mm.yyyy hh:mm:ss)": "Variable (Geändert, dd.mm.yyyy hh:mm:ss)",
+            "Variable (Changed, UnixTimestamp)": "Variable (Geändert, UnixTimestamp)",
+            "Variable (Profile Suffix)": "Variable (Profil Suffix)",
+            "Variable (Profile Digits)": "Variable (Profil Nachkommastellen)"
         }
     }
 }

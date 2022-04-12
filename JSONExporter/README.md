@@ -1,5 +1,5 @@
 # JSONExporter
- Das Modul bietet die Möglichkeiten, die aktuellen Werte eingestellter Variablen in einer vom Benutzer vorgegebenen Struktur als JSON im Browser anzuzeigen. 
+Das Modul bietet die Möglichkeiten, die aktuelle Werte von Variablen als JSON Export darzustellen. Dabei kann die Objektstruktur vorab definiert werden, sodass z.B. ein Array von Objekten mit ID, Name, Wert und Profilsuffix zurückgegeben wird. Es können im Anschluss beliebig der Objekte in dieser Struktur zurückgegeben werden, wobei die einzelnen Felder mit Variablen verknüpft oder als Freitext definiert werden.
 
 ### Inhaltsverzeichnis
 
@@ -13,9 +13,8 @@
 
 ### 1. Funktionsumfang
 
-* Individuelle Struktur
-* Ausgabe der aktuellen Werte in Json Format
-
+* Individuelle Struktur der Objekte kann definiert werden
+* Ausgabe der aktuellen Werte im JSON Format, wobei ein Array von Objekten zurückgegeben wird
 
 ### 2. Voraussetzungen
 
@@ -35,10 +34,9 @@ __Konfigurationsseite__:
 Name                       | Beschreibung
 -------------------------- | ------------------
 Ident                      | Auswählbarer Name
-Wert                       | __Costum__ Auswahl, was von der Variable ausgewählt werden soll 
+Wert                       | __Benutzerdefiniert__ Auswahl, was von der Variable ausgewählt werden soll 
 Zu exportierende Variablen | Liste, in dem die Variablen nach der Struktur aufgelistet und hinzugefügt werden kann
 Im Browser öffnen          | Öffnet die JSON Struktur in einem Browser 
-
 
 ### 5. Statusvariablen und Profile
 
@@ -49,6 +47,7 @@ Die Statusvariablen/Kategorien werden automatisch angelegt. Das Löschen einzeln
 Es werden keine zusätzlichen Statusvariablen erstellt.
 
 #### Profile
+
 Es werden keine zusätzlichen Profile erstellt.
 
 ### 6. WebFront
@@ -56,4 +55,5 @@ Es werden keine zusätzlichen Profile erstellt.
 Dieses Modul bietet keinerlei Funktion im Webfront.
 
 ### 7. PHP-Befehlsreferenze
+
 Dieses Modul bietet keinerlei aufrufbaren Funktionen. 

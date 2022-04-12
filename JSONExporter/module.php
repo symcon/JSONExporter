@@ -35,7 +35,7 @@ declare(strict_types=1);
 
             foreach ($this->fields as $key => $field) {
                 $data['elements'][0]['popup']['items'][1]['columns'][1]['edit']['options'][] = [
-                    'caption' => $field['caption'],
+                    'caption' => $this->Translate($field['caption']),
                     'value'   => $key,
                 ];
             }
