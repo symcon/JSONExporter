@@ -63,7 +63,7 @@ declare(strict_types=1);
         protected function ProcessHookData()
         {
             header('Content-Type: application/json; charset=utf-8');
-            header("Access-Control-Allow-Origin:*");
+            header('Access-Control-Allow-Origin:*');
 
             $map = [];
             foreach (json_decode($this->ReadPropertyString('ExportStructure'), true) as $structure) {
