@@ -33,7 +33,8 @@ __Konfigurationsseite__:
 
 Name                       | Beschreibung
 -------------------------- | ------------------
-Ident                      | Auswählbarer Name
+Konfiguriere Struktur      | Über __Konfiguriere Struktur__ kann der bereitzustellende Datensatz konfiguriert werden. Jeder Wert wird in die Tabelle __Zu exportierende Variablen__ eingetragen
+Ident                      | Auswählbarer Name unter dem der Wert bereitgestellt wird
 Wert                       | __Benutzerdefiniert__ Auswahl, was von der Variable ausgewählt werden soll 
 Zu exportierende Variablen | Liste, in dem die Variablen nach der Struktur aufgelistet und hinzugefügt werden kann
 Im Browser öffnen          | Öffnet die JSON Struktur in einem Browser 
