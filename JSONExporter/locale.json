@@ -16,7 +16,8 @@
             "Variable (Changed, dd.mm.yyyy hh:mm:ss)": "Variable (Geändert, dd.mm.yyyy hh:mm:ss)",
             "Variable (Changed, UnixTimestamp)": "Variable (Geändert, UnixTimestamp)",
             "Variable (Profile Suffix)": "Variable (Profil Suffix)",
-            "Variable (Profile Digits)": "Variable (Profil Nachkommastellen)"
+            "Variable (Profile Digits)": "Variable (Profil Nachkommastellen)",
+            "https://www.symcon.de/en/service/documentation/module-reference/jsonexporter/": "https://www.symcon.de/de/service/dokumentation/modulreferenz/jsonexporter/"
         }
     }
 }
