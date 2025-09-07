@@ -6,5 +6,5 @@
 
 Folgende Module beinhaltet das JSONExporter Repository:
 
-- __JSON Exporter__ ([Dokumentation](https://www.symcon.de/de/service/dokumentation/modulreferenz/jsonexporter/))  
+- __JSON Exporter__ ([Dokumentation](https://www.symcon.de/de/service/dokumentation/modulreferenz/json-exporter/))  
 	Exportiert beliebige Variablen in einer benutzerdefinierten Struktur über einen HTTP Endpunkt.
